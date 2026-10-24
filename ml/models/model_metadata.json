@@ -1,0 +1,28 @@
+{
+  "model_name": "APEX local transaction fraud classifier",
+  "algorithm": "Isolation Forest",
+  "model_version": "IForest-v20260827.1853",
+  "training_date": "2026-08-27T13:23:08.621450",
+  "training_record_count": 250,
+  "anomaly_contamination_rate": 0.05,
+  "feature_names": [
+    "amount",
+    "log_amount",
+    "hour_of_day",
+    "day_of_week",
+    "recent_tx_count_1h",
+    "recent_tx_count_24h",
+    "avg_tx_amount_30d",
+    "amount_deviation",
+    "failed_tx_count_24h",
+    "withdrawal_frequency_24h",
+    "transfer_frequency_24h",
+    "balance_to_tx_ratio"
+  ],
+  "evaluation": {
+    "total_records": 250,
+    "anomalous_records": 13,
+    "anomaly_percentage": 5.2,
+    "score_mean": 0.16875755317201516
+  }
+}
